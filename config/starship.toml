@@ -1,3 +1,0 @@
-add_newline = false
-
-format = """($nix_shell)$container$fill$git_metrics\n)$cmd_duration\"""
