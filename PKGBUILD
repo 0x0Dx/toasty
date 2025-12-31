@@ -1,5 +1,5 @@
 # shellcheck disable=SC2148,SC2034,SC2054
-pkgname='toasty-dots'
+pkgname='toasty-meta'
 pkgver='0.1.0'
 pkgrel=1
 pkgdesc='A metapackage containing all dependencies for the Toasty dotfiles'
