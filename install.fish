@@ -149,4 +149,9 @@ if confirm-overwrite $config/fish
   ln -s (realpath config/fish) $config/fish
 end
 
+if confirm-overwrite $config/waybar
+  log 'Installing waybar config...'
+  ln -s (realpath config/waybar) $config/waybar
+end
+
 log 'Done!'
