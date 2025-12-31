@@ -10,4 +10,4 @@ depends=('hyprland' 'xdg-desktop-portal-hyprland' 'xdg-desktop-portal-gtk' 'hypr
          'wl-clipboard' 'cliphist' 'swaync' 'wireplumber' 'trash-cli' 'foot' 'fish'
          'eza' 'fastfetch' 'starship' 'btop' 'jq' 'adw-gtk-theme' 'papirus-icon-theme'
          'qt5ct-kde' 'qt6ct-kde' 'ttf-jetbrains-mono-nerd' 'thunar' 'swww' 'vicinae-bin'
-         'waybar')
+         'waybar' 'spotify' 'vscodium-bin' 'discord' 'zen-browser-bin')
