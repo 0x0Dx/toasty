@@ -135,6 +135,18 @@ if confirm-overwrite $config/hypr
 end
 
 if confirm-overwrite $config/starship.toml
-  log 'Installing starship configs...'
+  log 'Installing starship config...'
   ln -s (realpath config/starship.toml) $config/starship.toml
 end
+
+if confirm-overwrite $config/foot
+  log 'Installing foot config...'
+  ln -s (realpath config/foot) $config/foot
+end
+
+if confirm-overwrite $config/fish
+  log 'Installing fish config...'
+  ln -s (realpath config/fish) $config/fish
+end
+
+log 'Done!'
