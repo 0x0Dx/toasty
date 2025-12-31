@@ -9,4 +9,4 @@ licence=('MIT')
 depends=('hyprland' 'xdg-desktop-portal-hyprland' 'xdg-desktop-portal-gtk' 'hyprpicker'
          'wl-clipboard' 'cliphist' 'swaync' 'wireplumber' 'trash-cli' 'foot' 'fish'
          'eza' 'fastfetch' 'starship' 'btop' 'jq' 'adw-gtk-theme' 'papirus-icon-theme'
-         'qt5ct-kde' 'qt6ct-kde' 'ttf-jetbrains-mono-nerd' 'thunar')
+         'qt5ct-kde' 'qt6ct-kde' 'ttf-jetbrains-mono-nerd' 'thunar' 'swww' 'vicinae-bin')
