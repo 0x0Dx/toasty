@@ -125,3 +125,16 @@ if test $aur_helper = yay
 else
   $aur_helper -Ui $noconfirm
 end
+fish -c 'rm -f toasty-meta-*.pkg.tar.zst' 2> /dev/null
+fish -c 'rm -f .SRCINFO' 2> /dev/null
+
+if confirm-overwrite $config/hypr
+  log 'Installing hypr* configs...'
+  ln -s (realpath config/hypr) $config/hypr
+  hyprctl reload
+end
+
+if confirm-overwrite $config/starship.toml
+  log 'Installing starship configs...'
+  ln -s (realpath config/starship.toml) $config/starship.toml
+end
