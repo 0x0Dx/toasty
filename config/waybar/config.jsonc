@@ -65,6 +65,7 @@
   },
   "battery": {
     "format": "{capacity}% {icon}",
+    "on-click": "~/.config/waybar/script/battery-menu.fish",
     "format-discharging": "{icon}",
     "format-charging": "{icon}",
     "format-plugged": "\uf1e6",

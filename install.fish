@@ -160,4 +160,19 @@ if confirm-overwrite $config/VSCodium/settings.json && confirm-overwrite $config
   ln -s (realpath config/vscode/keybindings.json) $config/VSCodium/keybindings.json
 end
 
+log 'Setting up passwordless power management (tlp / asusctl)...'
+set sudoers_file /etc/sudoers.d/toasty-power
+
+set tlp_path (command -v tlp)
+set asusctl_path (command -v asusctl)
+
+if test -n "$tlp_path" -a -n "$asusctl_path"
+  echo "$USER ALL=(ALL) NOPASSWD: $tlp_path, $asusctl_path" | sudo tee $sudoers_file > /dev/null
+  sudo chmod 440 $sudoers_file
+  log 'Sudo bypass enabled for tlp and asusctl'
+else
+  log 'tlp or asusctl not found, skipping sudo bypass'
+end
+
+
 log 'Done!'
