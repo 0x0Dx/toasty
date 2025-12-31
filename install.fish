@@ -154,4 +154,10 @@ if confirm-overwrite $config/waybar
   ln -s (realpath config/waybar) $config/waybar
 end
 
+if confirm-overwrite $config/VSCodium/settings.json && confirm-overwrite $config/VSCodium/keybindings.json
+  log 'Installing vscodium config...'
+  ln -s (realpath config/vscode/settings.json) $config/VSCodium/settings.json
+  ln -s (realpath config/vscode/keybindings.json) $config/VSCodium/keybindings.json
+end
+
 log 'Done!'
