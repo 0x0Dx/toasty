@@ -1,0 +1,10 @@
+# shellcheck disable=SC2148,SC2034,SC2054
+pkgname='toasty-font-themes'
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Toasty Font and Theming Dependencies'
+arch=('any')
+licence=('MIT')
+url='https://github.com/0x0Dx/toasty'
+depends=('adw-gtk-theme' 'ttf-jetbrains-mono-nerd' 'eza' 'fish' 'fontconfig' 'ghostty'
+         'matugen-bin' 'starship')

@@ -1,0 +1,9 @@
+# shellcheck disable=SC2148,SC2034,SC2054
+pkgname='toasty-hyprland'
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Toasty Hyprland Dependencies'
+arch=('any')
+licence=('MIT')
+url='https://github.com/0x0Dx/toasty'
+depends=('hyprland' 'xdg-desktop-portal-hyprland' 'hyprpicker' 'wl-clipboard')
