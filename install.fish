@@ -130,7 +130,7 @@ for dir in metapackages/*
     end
 
     rm -f $dir/toasty-*.pkg.tar.zst 2> /dev/null
-    rm -f $dir/toasty-*.tar.xz 2> /dev/null
+    for f in $dir/toasty-*.tar.xz; if test -e $f; rm $f; end; end
     rm -f $dir/.SRCINFO 2> /dev/null
   end
 end
