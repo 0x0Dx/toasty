@@ -1,0 +1,18 @@
+# shellcheck disable=SC2148,SC2034,SC2054,SC2154
+pkgname=toasty-bibata-modern-classic-bin
+pkgver=2.0.7
+pkgrel=1
+pkgdesc="Material Based Cursor Theme, installed for Toasty dotfiles"
+arch=('any')
+url="https://github.com/ful1e5/Bibata_Cursor"
+license=('GPL-3.0-or-later')
+conflicts=("bibata-cursor-theme" "bibata-cursor-theme-bin")
+options=('!strip')
+_variant=Bibata-Modern-Classic
+source=("${pkgname%-bin}-$pkgver.tar.xz::$url/releases/download/v$pkgver/$_variant.tar.xz")
+sha256sums=('7d3495864e5bbef02f5e77de760b2905903b63c71495a78ef6306d19a3b556d8')
+
+package() {
+  install -dm755 "$pkgdir/usr/share/icons"
+  cp -dr --no-preserve=mode $_variant "$pkgdir/usr/share/icons"
+}

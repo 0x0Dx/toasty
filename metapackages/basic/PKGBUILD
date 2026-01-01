@@ -1,0 +1,10 @@
+# shellcheck disable=SC2148,SC2034,SC2054
+pkgname='toasty-backlight'
+pkgver='0.1.0'
+pkgrel=1
+pkgdesc='Toasty Basic Dependencies'
+arch=('any')
+licence=('MIT')
+url='https://github.com/0x0Dx/toasty'
+depends=('bc' 'coreutils' 'cliphist' 'cmake' 'curl' 'wget' 'ripgrep' 'jq' 'xdg-user-dirs'
+         'rsync' 'go-yq')
