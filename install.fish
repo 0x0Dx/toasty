@@ -129,7 +129,7 @@ for dir in metapackages/*
       $aur_helper -Ui $dir $noconfirm
     end
 
-    rm -f $dir/toasty-*.pkg.tar.zst 2> /dev/null
+    rm -f $dir/toasty-*.tar.zst 2> /dev/null
     rm -f $dir/.SRCINFO 2> /dev/null
   end
 end
