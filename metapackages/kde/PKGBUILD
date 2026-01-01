@@ -7,4 +7,4 @@ arch=('any')
 licence=('MIT')
 url='https://github.com/0x0Dx/toasty'
 depends=('bluedevil' 'gnome-keyring' 'networkmanager' 'plasma-nm' 'polkit-kde-agent'
-         'dolphin' 'systemsettings')
+         'dolphin' 'systemsettings' 'trash-cli' 'qt5ct-kde' 'qt6ct-kde')

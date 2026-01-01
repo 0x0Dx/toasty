@@ -7,4 +7,4 @@ arch=('any')
 licence=('MIT')
 url='https://github.com/0x0Dx/toasty'
 depends=('adw-gtk-theme' 'ttf-jetbrains-mono-nerd' 'eza' 'fish' 'fontconfig' 'ghostty'
-         'matugen-bin' 'starship')
+         'matugen-bin' 'starship' 'papirus-icon-theme')

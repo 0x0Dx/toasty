@@ -6,4 +6,4 @@ pkgdesc='Toasty Hyprland Dependencies'
 arch=('any')
 licence=('MIT')
 url='https://github.com/0x0Dx/toasty'
-depends=('hyprland' 'xdg-desktop-portal-hyprland' 'hyprpicker' 'wl-clipboard')
+depends=('hyprland' 'hyprpicker' 'wl-clipboard' 'waybar' 'swww')

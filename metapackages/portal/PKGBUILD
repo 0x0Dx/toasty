@@ -1,0 +1,10 @@
+# shellcheck disable=SC2148,SC2034,SC2054
+pkgname='toasty-portal'
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Toasty XDG Desktop Portals'
+arch=('any')
+licence=('MIT')
+url='https://github.com/0x0Dx/toasty'
+depends=('xdg-desktop-portal-gtk' 'xdg-desktop-portal-kde' 'xdg-desktop-portal-gtk'
+         'xdg-desktop-portal-hyprland')
