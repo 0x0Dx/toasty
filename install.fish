@@ -161,6 +161,11 @@ if confirm-overwrite $config/waybar
   ln -s (realpath config/waybar) $config/waybar
 end
 
+if confirm-overwrite $config/fuzzel
+  log 'Installing fuzzel config...'
+  ln -s (realpath config/fuzzel) $config/fuzzel
+end
+
 if confirm-overwrite $config/VSCodium/settings.json && confirm-overwrite $config/VSCodium/keybindings.json
   log 'Installing vscodium config...'
   ln -s (realpath config/vscode/settings.json) $config/VSCodium/settings.json
@@ -184,6 +189,5 @@ end
 hyprpm update
 hyprpm add https://github.com/hyprwm/hyprland-plugins
 hyprpm enable hyprexpo
-hyprpm enable hyprbars
 
 log 'Done!'
