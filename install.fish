@@ -121,9 +121,16 @@ cd (dirname (status filename)) || exit 1
 
 log 'Installing metapackages...'
 for dir in metapackages/*
-  log "Installing metapackage in $dir..."
-  $aur_helper -Bi $dir $noconfirm
+  if test -d $dir
+    log "Installing metapackage in $dir..."
+    if test $aur_helper = yay
+      $aur_helper -Bi $dir $noconfirm
+    else
+      $aur_helper -Ui $dir $noconfirm
+    end
+  end
 end
+
 
 if confirm-overwrite $config/hypr
   log 'Installing hypr* configs...'
