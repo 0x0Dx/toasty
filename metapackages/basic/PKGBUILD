@@ -8,4 +8,4 @@ licence=('MIT')
 url='https://github.com/0x0Dx/toasty'
 depends=('bc' 'coreutils' 'cliphist' 'cmake' 'curl' 'wget' 'ripgrep' 'jq' 'xdg-user-dirs'
          'rsync' 'go-yq' 'swaync' 'fastfetch' 'btop' 'spotify' 'vscodium-bin'
-         'discord' 'zen-browser-bin' 'quickshell' 'fuzzel')
+         'discord' 'zen-browser-bin' 'quickshell' 'fuzzel' 'cpio')
