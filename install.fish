@@ -120,13 +120,10 @@ end
 cd (dirname (status filename)) || exit 1
 
 log 'Installing metapackages...'
-if test $aur_helper = yay
-  $aur_helper -Bi . $noconfirm
-else
-  $aur_helper -Ui $noconfirm
+for dir in metapackages/*
+  log "Installing metapackage in $dir..."
+  $aur_helper -Bi $dir $noconfirm
 end
-fish -c 'rm -f toasty-meta-*.pkg.tar.zst' 2> /dev/null
-fish -c 'rm -f .SRCINFO' 2> /dev/null
 
 if confirm-overwrite $config/hypr
   log 'Installing hypr* configs...'
