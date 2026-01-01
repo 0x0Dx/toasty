@@ -122,12 +122,14 @@ cd (dirname (status filename)) || exit 1
 log 'Installing metapackages...'
 for dir in metapackages/*
   if test -d $dir
-    log "Installing metapackage in $dir..."
+    log "Installing metapackage in $dir/..."
     if test $aur_helper = yay
       $aur_helper -Bi $dir $noconfirm
     else
       $aur_helper -Ui $dir $noconfirm
     end
+    fish -c 'rm -f $dir/toasty-*.pkg.tar.zst' 2> /dev/null
+    fish -c 'rm -f $dir/.SRCINFO' 2> /dev/null
   end
 end
 
