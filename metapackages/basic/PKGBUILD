@@ -7,5 +7,5 @@ arch=('any')
 licence=('MIT')
 url='https://github.com/0x0Dx/toasty'
 depends=('bc' 'coreutils' 'cliphist' 'cmake' 'curl' 'wget' 'ripgrep' 'jq' 'xdg-user-dirs'
-         'rsync' 'go-yq' 'swaync' 'fastfetch' 'btop' 'vicinae-bin' 'spotify' 'vscodium-bin'
-         'discord' 'zen-browser-bin' 'quickshell')
+         'rsync' 'go-yq' 'swaync' 'fastfetch' 'btop' 'spotify' 'vscodium-bin'
+         'discord' 'zen-browser-bin' 'quickshell' 'fuzzel')

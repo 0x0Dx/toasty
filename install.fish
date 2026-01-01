@@ -181,5 +181,9 @@ else
   log 'tlp or asusctl not found, skipping sudo bypass'
 end
 
+hyprpm update
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm enable hyprexpo
+hyprpm enable hyprbars
 
 log 'Done!'
