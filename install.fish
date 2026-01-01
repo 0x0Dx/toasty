@@ -128,11 +128,11 @@ for dir in metapackages/*
     else
       $aur_helper -Ui $dir $noconfirm
     end
-    fish -c 'rm -f $dir/toasty-*.pkg.tar.zst' 2> /dev/null
-    fish -c 'rm -f $dir/.SRCINFO' 2> /dev/null
+
+    rm -f $dir/toasty-*.pkg.tar.zst 2> /dev/null
+    rm -f $dir/.SRCINFO 2> /dev/null
   end
 end
-
 
 if confirm-overwrite $config/hypr
   log 'Installing hypr* configs...'
