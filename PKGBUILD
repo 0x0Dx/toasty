@@ -7,7 +7,7 @@ arch=('any')
 url='https://github.com/0x0Dx/toasty'
 licence=('MIT')
 depends=('hyprland' 'xdg-desktop-portal-hyprland' 'xdg-desktop-portal-gtk' 'hyprpicker'
-         'wl-clipboard' 'cliphist' 'swaync' 'wireplumber' 'trash-cli' 'foot' 'fish'
-         'eza' 'fastfetch' 'starship' 'btop' 'jq' 'adw-gtk-theme' 'papirus-icon-theme'
-         'qt5ct-kde' 'qt6ct-kde' 'ttf-jetbrains-mono-nerd' 'thunar' 'swww' 'vicinae-bin'
-         'waybar' 'spotify' 'vscodium-bin' 'discord' 'zen-browser-bin')
+         'wl-clipboard' 'cliphist' 'swaync' 'trash-cli' 'foot' 'fish' 'eza' 'fastfetch'
+         'starship' 'btop' 'jq' 'adw-gtk-theme' 'papirus-icon-theme' 'qt5ct-kde'
+         'qt6ct-kde' 'ttf-jetbrains-mono-nerd' 'thunar' 'swww' 'vicinae-bin' 'waybar'
+         'spotify' 'vscodium-bin' 'discord' 'zen-browser-bin')
