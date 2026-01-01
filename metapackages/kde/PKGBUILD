@@ -1,0 +1,10 @@
+# shellcheck disable=SC2148,SC2034,SC2054
+pkgname='toasty-kde'
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Toasty KDE Dependencies'
+arch=('any')
+licence=('MIT')
+url='https://github.com/0x0Dx/toasty'
+depends=('bluedevil' 'gnome-keyring' 'networkmanager' 'plasma-nm' 'polkit-kde-agent'
+         'dolphin' 'systemsettings')
