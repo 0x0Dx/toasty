@@ -2,3 +2,5 @@
 toasty-*.pkg.tar.zst
 monitors.conf
 workspaces.conf
+.venv
+.python-version
