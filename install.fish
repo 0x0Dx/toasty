@@ -166,6 +166,11 @@ if confirm-overwrite $config/fuzzel
   ln -s (realpath config/fuzzel) $config/fuzzel
 end
 
+if confirm-overwrite $config/ags
+  log 'Installing ags config...'
+  ln -s (realpath config/ags) $config/ags
+end
+
 if confirm-overwrite $config/VSCodium/settings.json && confirm-overwrite $config/VSCodium/keybindings.json
   log 'Installing vscodium config...'
   ln -s (realpath config/vscode/settings.json) $config/VSCodium/settings.json
